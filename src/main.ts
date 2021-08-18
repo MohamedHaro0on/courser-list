@@ -7,6 +7,9 @@ import { environment } from './environments/environment';
 if (environment.production) {
   enableProdMode();
 }
+// this is the entry point of the application ; 
+// starts compiling with the appModule  ;
+// it can be changed to other Module ;
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
